@@ -1,0 +1,19 @@
+/* Document styles */
+
+html,
+body {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+div {
+  border: 1px solid green;
+}
+
+/* Document styles */
