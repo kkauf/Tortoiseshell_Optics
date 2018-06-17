@@ -5,6 +5,7 @@ body {
   font-size: 18px;
   line-height: 1.4;
   font-family: Helvetica;
+  background-color: azure;
 }
 
 .container {
@@ -16,4 +17,108 @@ div {
   border: 1px solid green;
 }
 
-/* Document styles */
+span,
+ul {
+  color: white;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+
+/* Header Section */
+
+header {
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  padding: 0 1rem 0 2rem;
+  height: 1.5rem;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  padding: 1rem 2rem;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Banner Section */
+
+.optics {
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 31rem;
+}
+
+.banner {
+  position: relative;
+  top: 14rem;
+  display: flex;
+  justify-content: flex-end;
+  left: 2rem;
+  }
+
+.banner h1 {
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.5rem 5rem;
+  margin: 0, 0, 5rem, 0;
+}
+
+
+/* Features Section */
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.feature {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 5rem;
+  height: 8rem;
+}
+
+.caption {
+  text-align: center;
+}
+
+.ruler img,
+.truck img {
+  max-width: 5rem;
+}
+
+.paper img {
+  max-width: 3rem;
+}
+
+.caption span{
+  color: black;
+}
