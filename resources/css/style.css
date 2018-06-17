@@ -12,6 +12,12 @@ body {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 996px){
+  .container {
+    width: 100%;
+  }
+}
+
 span,
 ul {
   color: white;
@@ -23,7 +29,6 @@ h1 {
   line-height: 1.2;
 }
 
-
 /* Header Section */
 
 header {
@@ -33,6 +38,12 @@ header {
   justify-content: space-between;
   position: relative;
   top: 1rem;
+}
+
+@media screen and (max-width: 996px){
+  header {
+    top: 0;
+  }
 }
 
 .logo {
@@ -57,6 +68,15 @@ header {
   display: none;
 }
 
+@media screen and (max-width: 650px){
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
 /* Banner Section */
 
 .optics {
@@ -67,13 +87,43 @@ header {
   height: 31rem;
 }
 
+@media screen and (max-width: 996px){
+  .optics {
+    height: 22rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .optics {
+    background-position: 20%;
+    height: 17rem;
+  }
+}
+
 .banner {
   position: relative;
-  top: 14rem;
+  top: 10rem;
   display: flex;
   justify-content: flex-end;
   left: 2rem;
   }
+
+@media screen and (max-width: 996px){
+  .banner {
+    left: 0;
+    margin-right: 2rem;
+    top: 5rem;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .banner {
+    top: 9rem;
+    width: 100%;
+    margin-right: 0;
+    display: block;
+  }
+}
 
 .banner h1 {
   background-color: white;
@@ -83,12 +133,33 @@ header {
   margin: 0, 0, 5rem, 0;
 }
 
+@media screen and (max-width: 996px){
+  .banner h1 {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .banner h1 {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
 
 /* Features Section */
 
 .features {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 650px){
+  .features {
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
 }
 
 .feature {
@@ -99,6 +170,12 @@ header {
   justify-content: space-between;
   max-width: 5rem;
   height: 8rem;
+}
+
+@media screen and (max-width: 650px){
+  .feature {
+  margin: 1.54rem;
+  }
 }
 
 .caption {
@@ -124,6 +201,14 @@ header {
 .information {
   display: flex;
   padding-bottom: 5rem;
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 650px){
+  .information {
+    display: block;
+    padding: 0;
+  }
 }
 
 .info {
@@ -134,6 +219,17 @@ header {
 .headline {
   width: 10rem;
   background-color: cadetblue;
+}
+
+
+@media screen and (max-width: 650px){
+  .headline{
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+    margin: 4rem 0;
+  }
 }
 
 .headline h2 {
@@ -165,4 +261,16 @@ footer img {
 
 footer span {
   color: black;
+}
+
+@media screen and (max-width: 650px){
+  footer span {
+    display: none;
+  }
+  footer img {
+    padding: 0;
+  }
+  footer .container {
+    justify-content: center;
+  }
 }
