@@ -5,16 +5,11 @@ body {
   font-size: 18px;
   line-height: 1.4;
   font-family: Helvetica;
-  background-color: azure;
 }
 
 .container {
     max-width: 960px;
     margin: 0 auto;
-}
-
-div {
-  border: 1px solid green;
 }
 
 span,
@@ -120,5 +115,54 @@ header {
 }
 
 .caption span{
+  color: black;
+}
+
+
+/* Information Section */
+
+.information {
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+}
+
+.headline {
+  width: 10rem;
+  background-color: cadetblue;
+}
+
+.headline h2 {
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+/* Footer Section */
+
+footer .container {
+  padding: 4rem;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  width: auto;
+  padding-right: 1rem;
+}
+
+footer span {
   color: black;
 }
